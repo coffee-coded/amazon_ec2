@@ -40,10 +40,17 @@ def inputs_2():
 
 
 if __name__ == '__main__':
+    print("""
+    _______________      ______                            __
+   / ____/ ____/__ \    / ____/___  ____  ____  ___  _____/ /_
+  / __/ / /    __/ /   / /   / __ \/ __ \/ __ \/ _ \/ ___/ __/
+ / /___/ /___ / __/   / /___/ /_/ / / / / / / /  __/ /__/ /_
+/_____/\____//____/   \____/\____/_/ /_/_/ /_/\___/\___/\__/
+
+                                          -by Coffee Coded
+    """)
     x = int(input("1. Connect to your ec2-system \n2. Transfer files to your ec2-instance\n     Choose : "))
     if x == 1:
-        command = inputs()
-        os.system(command)
+        os.system(inputs())
     else:
-        command = inputs_2()
-        os.system(command)
+        os.system(inputs_2())
